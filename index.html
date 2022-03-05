@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Techmark</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/W3.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .doNotShowHTSCODE {
+      display: none;
+  }
+  
+  #hiddenMessageHTSCODE {
+      display: none
+  }
+
+
+</style>
+</head>
+<body>
+<h1 class="w3-center" style="font-family:Arial, Helvetica, sans-serif">Techmark</h1>
+</div>
+
+<div class="w3-row">
+  <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Script</div>
+  </a>
+  <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Audio</div>
+  </a>
+  <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Images</div>
+  </a>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2>London</h2>
+  <!--------------------------------------------//
+  //---------- Page one accordion tab ----------//
+  //--------------------------------------------->
+  <section class="container mt-5" id='HTSsection'>
+    <ul class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
+        <li class="cd-accordion__item cd-accordion__item--has-children">
+            <input class="cd-accordion__input" type="checkbox" name="group-1" id="group-1">
+            <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder p-3" for="group-1"><span>Start Conversation</span></label>
+            <!-- four Digit -->
+            <ul class="cd-accordion__sub cd-accordion__sub--l1 firstSub">
+                <!-- change the "if", "name", and "for" on label  -->
+                <li class="cd-accordion__item cd-accordion__item--has-children">
+                    <input class="cd-accordion__input" type="checkbox" name="sub-group-2" id="sub-group-2">
+                    <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder  p-3" for="sub-group-2"><span>Yes</span></label>
+                        <ul class="cd-accordion__sub cd-accordion__sub--l2 secondsub">
+                           <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 1234 </span></a></li>
+                           <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 5678  </span></a></li>
+
+                        </ul>
+                    <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder  p-3" for="sub-group-3"><span>No</span></label>
+
+                    <ul class="cd-accordion__sub cd-accordion__sub--l2 secondsub">
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 1234 </span></a></li>
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 5678  </span></a></li>
+
+                    </ul>
+                </li>
+                <!-- change the "if", "name", and "for" on label  -->
+                <li class="cd-accordion__item cd-accordion__item--has-children">
+                    <input class="cd-accordion__input" type="checkbox" name="sub-group-3" id="sub-group-3">
+                    <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder  p-3" for="sub-group-4"><span>8469</span></label>
+
+                    <ul class="cd-accordion__sub cd-accordion__sub--l2 secondsub">
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 91011 </span></a></li>
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 121314  </span></a></li>
+
+                    </ul>
+                </li>
+                <!-- change the "if", "name", and "for" on label  -->
+                <li class="cd-accordion__item cd-accordion__item--has-children">
+                    <input class="cd-accordion__input" type="checkbox" name="sub-group-4" id="sub-group-5">
+                    <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder  p-3" for="sub-group-4"><span>8418</span></label>
+
+                    <ul class="cd-accordion__sub cd-accordion__sub--l2 secondsub">
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 154617 </span></a></li>
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 181920  </span></a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </li>
+    </ul>
+
+
+    <!-- change name, if and for on "group-xx"  -->
+    <ul class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
+        <li class="cd-accordion__item cd-accordion__item--has-children">
+            <input class="cd-accordion__input" type="checkbox" name="group-2" id="group-2">
+            <label class=" labelForFilter cd-accordion__label cd-accordion__label--icon-folder   p-3" for="group-2"><span>13</span></label>
+            <!-- four Digit -->
+            <ul class="cd-accordion__sub cd-accordion__sub--l1 firstSub">
+                <!-- change the "if", "name", and "for" on label  -->
+                <li class="cd-accordion__item cd-accordion__item--has-children">
+                    <input class="cd-accordion__input" type="checkbox" name="sub-group-11" id="sub-group-11">
+                    <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder  p-3" for="sub-group-11"><span>1302</span></label>
+
+                    <ul class="cd-accordion__sub cd-accordion__sub--l2 secondsub">
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 130232 </span></a></li>
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 130200  </span></a></li>
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 130230  </span></a></li>
+                    </ul>
+                </li>
+                <!-- change the "if", "name", and "for" on label  -->
+                <li class="cd-accordion__item cd-accordion__item--has-children">
+                    <input class="cd-accordion__input" type="checkbox" name="sub-group-22" id="sub-group-22">
+                    <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder  p-3" for="sub-group-22"><span>1309</span></label>
+
+                    <ul class="cd-accordion__sub cd-accordion__sub--l2 secondsub">
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 130900 </span></a></li>
+
+                    </ul>
+                </li>
+                <!-- change the "if", "name", and "for" on label  -->
+                <li class="cd-accordion__item cd-accordion__item--has-children">
+                    <input class="cd-accordion__input" type="checkbox" name="sub-group-33" id="sub-group-33">
+                    <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder  p-3" for="sub-group-33"><span>1303</span></label>
+
+                    <ul class="cd-accordion__sub cd-accordion__sub--l2 secondsub">
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 130120 </span></a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </li>
+    </ul>
+
+
+
+    <!-- change name, if and for on "group-xx"  -->
+    <ul class="cd-accordion cd-accordion--animated margin-top-lg margin-bottom-lg">
+        <li class="cd-accordion__item cd-accordion__item--has-children">
+            <input class="cd-accordion__input" type="checkbox" name="group-3" id="group-3">
+            <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder   p-3" for="group-3"><span>29</span></label>
+            <!-- four Digit -->
+            <ul class="cd-accordion__sub cd-accordion__sub--l1 firstSub">
+                <!-- change the "if", "name", and "for" on label  -->
+                <li class="cd-accordion__item cd-accordion__item--has-children">
+                    <input class="cd-accordion__input" type="checkbox" name="sub-group-111" id="sub-group-111">
+                    <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder  p-3" for="sub-group-111"><span>2934</span></label>
+
+                    <ul class="cd-accordion__sub cd-accordion__sub--l2 secondsub">
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 323334 </span></a></li>
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 353637  </span></a></li>
+
+                    </ul>
+                </li>
+                <!-- change the "if", "name", and "for" on label  -->
+                <li class="cd-accordion__item cd-accordion__item--has-children">
+                    <input class="cd-accordion__input" type="checkbox" name="sub-group-222" id="sub-group-222">
+                    <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder  p-3" for="sub-group-222"><span>2922  </span></label>
+
+                    <ul class="cd-accordion__sub cd-accordion__sub--l2 secondsub">
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 383940 </span></a></li>
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 414243  </span></a></li>
+
+                    </ul>
+                </li>
+                <!-- change the "if", "name", and "for" on label  -->
+                <li class="cd-accordion__item cd-accordion__item--has-children">
+                    <input class="cd-accordion__input" type="checkbox" name="sub-group-333" id="sub-group-333">
+                    <label class="labelForFilter cd-accordion__label cd-accordion__label--icon-folder  p-3" for="sub-group-333"><span>2942</span></label>
+
+                    <ul class="cd-accordion__sub cd-accordion__sub--l2 secondsub">
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 444546 </span></a></li>
+                        <li class="labelForFilter cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img  p-3" href="#0"><span> 464748  </span></a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </li>
+    </ul>
+    <p id="hiddenMessageHTSCODE">Not Found</p>
+</section>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h1>Iphone Images</h1>
+<hr>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="https://www.w3schools.com/w3images/cars1.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="https://www.w3schools.com/w3images/cars2.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="https://www.w3schools.com/w3images/cars3.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="https://www.w3schools.com/w3images/people1.jpg" alt="Car" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://www.w3schools.com/w3images/people2.jpg" alt="Car" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://www.w3schools.com/w3images/people3.jpg" alt="Car" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+</div>
+<script src="main.js"></script>
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-gray", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-gray";
+}
+</script>
+</body>
+</html>
