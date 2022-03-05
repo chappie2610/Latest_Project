@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  max-width: 1280px;
+  margin-inline: auto;
+  background-color: rgb(117, 235, 137);
+}
+
+.tab-container {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+  justify-content: center;
+}
+
+.tab-button {
+  padding: 8px 16px;
+  border-bottom: transparent 4px solid;
+  transition: border-bottom-color 0.4s;
+}
+
+.content {
+  padding: 16px;
+}
+
+.tab-actor:checked + .tab-button {
+  border-bottom-color: rgb(82, 2, 136);
+}
+
+@media screen and (max-width: 480px) {
+  .tab-button {
+    border-bottom: 1px solid #ccc;
+    transition: none;
+  }
+
+  .tab-content {
+    background-color: ivory;
+  }
+
+  .tab-container.full-height {
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .tab-container.full-height .tab-content {
+    display: block;
+    height: auto;
+    flex: 0;
+    overflow: hidden;
+
+    transition: 300ms flex;
+  }
+
+  .tab-container.full-height .tab-actor:checked + .tab-button + .tab-content {
+    flex: 1;
+  }
+}
+
+
+/*=======================*/
+/*
+/*=====for images========*/
+/*
+/*=======================*/
+
+/* General styles */
+/* Grid */
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/*----------------------------*/
+/*-------Accordion CSS--------*/
+/*----------------------------*/
+.cd-article-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.cd-accordion {
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .1), 0 16px 48px rgba(0, 0, 0, .1), 0 24px 60px rgba(0, 0, 0, .1);
+  box-shadow: var(--shadow-lg);
+}
+
+.cd-accordion--animated .cd-accordion__label::before {
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  margin-right: 6px;
+}
+
+.cd-accordion__sub {
+  display: none;
+  overflow: hidden;
+}
+
+.cd-accordion__sub--is-visible {
+  display: block;
+}
+
+.cd-accordion__item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cd-accordion__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.cd-accordion__label {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.75em 1.25em;
+  padding: var(--space-sm) var(--space-md);
+  background: #c5c1bb;
+  color: #fff;
+  color: var(--color-white);
+  margin: 0!important;
+  box-shadow: 1px 1px 4px black!important;
+}
+
+.cd-accordion {
+  margin: 0!important
+}
+
+.cd-accordion__sub {
+  list-style: none;
+}
+
+.cd-accordion__label span {
+  -ms-flex-order: 3;
+  order: 3;
+  margin-left: 2px;
+}
+
+.cd-accordion__label:hover {
+  background: #6db8c5;
+  color: white;
+}
+
+.cd-accordion__label::after,
+.cd-accordion__label--icon-folder::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 0.25em;
+}
+
+.cd-accordion__label--icon-folder::before {
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.cd-accordion__label::after {
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.cd-accordion__label--icon-folder::before {
+  content: "\f054";
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+/*--.cd-accordion__label--icon-folder::after {
+  content: "\e11e";
+  font: normal normal normal 14px/1 FontAwesome;
+}----*/
+.cd-accordion__label--icon-img::after {
+  content: "\f016";
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.cd-accordion__input:checked+.cd-accordion__label::before {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.cd-accordion__sub--l1 .cd-accordion__label--icon-folder::after {
+  content: "\f0c5";
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.cd-accordion__sub--l2 .cd-accordion__label--icon-folder::after {
+  content: "\f016";
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.cd-accordion__input:checked+.cd-accordion__label::after {
+  background-position: -32px 0;
+}
+
+.cd-accordion__input:checked~.cd-accordion__sub {
+  display: block;
+  background: silver;
+}
+
+.cd-accordion__sub--l1 .cd-accordion__label {
+  background: #1f2022;
+  box-shadow: inset 0 -1px var(--color-shadow);
+  padding-left: calc(1.25em + 16px);
+  padding-left: calc(var(--space-md) + 16px);
+  color: #fff;
+}
+
+.cd-accordion__sub--l1 .cd-accordion__label:hover {
+  background: #6281c4
+}
+
+.cd-accordion__item:last-child .cd-accordion__label {
+  box-shadow: none;
+}
+
+.cd-accordion__sub--l2 .cd-accordion__label {
+  padding-left: calc(1.5em + 32px);
+  padding-left: calc(var(--space-md) + var(--space-xxxs) + 32px);
+}
+
+.cd-accordion__sub--l3 .cd-accordion__label {
+  padding-left: calc(1.5em + 48px);
+  padding-left: calc(var(--space-md) + var(--space-xxxs) + 48px);
+}
+
+.firstSub .cd-accordion__label {
+  margin-bottom: 2px!important
+}
+
+.secondSub .cd-accordion__label {
+  margin-bottom: 0px!important
+}
+
+.thirdsub .cd-accordion__item {
+  margin-bottom: 0px!important
+}
